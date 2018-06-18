@@ -1,0 +1,28 @@
+﻿@model InstamojoIntegration.Models.InstamojoResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>redirectto</title>
+</head>
+<body>
+    <div>
+        <h4>InstamojoResponse</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>@Html.DisplayNameFor(model => model.success)</dt>    
+            <dd>@Html.DisplayFor(model => model.success)</dd>    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
